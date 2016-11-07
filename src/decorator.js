@@ -4,7 +4,7 @@ import toggleMenu from './action';
 const reduxBurgerMenu = (ComposedComponent) => {
   const mapStateToProps = (state) => {
     return {
-      isOpen: state.burgerMenu.isOpen
+      isOpen: state.burgerMenu.get('isOpen')
     };
   };
 
